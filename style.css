@@ -32,6 +32,7 @@ h1 {
 }
 .brewery > h2 {
   margin-bottom: 0px;
+  font-size: 18px;
 }
 .brewery > p {
   margin: 10px;

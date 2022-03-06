@@ -35,7 +35,11 @@ const displayBreweryList = (breweryList) => {
 };
 searchBar.addEventListener("keyup", (e) => {
   console.log("E", e.target.value);
-  searchListOfBrewery(e.target.value.toLowerCase());
+  if (e.target.value) {
+    searchListOfBrewery(e.target.value.toLowerCase());
+  } else {
+    loadBreweryLists();
+  }
 });
 
 const searchListOfBrewery = async (val) => {

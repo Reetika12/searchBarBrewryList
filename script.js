@@ -45,7 +45,6 @@ const searchListOfBrewery = async (val) => {
     );
     breweryList = await res.json();
     console.log("searchbreweryList", breweryList);
-    // console.log("breweryListOne", breweryList[0]);
     displayBreweryList(breweryList);
   } catch (err) {
     console.error(err);
